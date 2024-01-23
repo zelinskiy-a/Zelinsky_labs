@@ -1,0 +1,18 @@
+﻿<Window x:Class="Zelinsky_labs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zelinsky_labs"
+        mc:Ignorable="d"
+        Title="Учет клиентов компании" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem x:Name="Person" Header="Клиент" Click="Person_OnClick"></MenuItem>
+            <MenuItem x:Name="EmailPerson" Header="Адрес электронной почты" Click="EmailPerson_OnClick"></MenuItem>
+            <MenuItem x:Name="PhonePerson" Header="Телефон" Click="PhonePerson_OnClick"></MenuItem>
+            <MenuItem x:Name="StatusPerson" Header="Статус" Click="StatusPerson_OnClick"></MenuItem>
+            <MenuItem x:Name="VerietyPerson" Header="Вид клиента" Click="VerietyPerson_OnClick"></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
