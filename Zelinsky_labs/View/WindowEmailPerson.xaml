@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Zelinsky_labs.View"
         mc:Ignorable="d"
         Title="Адрес электронной почты" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <ListView x:Name="lvPerson">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Номер" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Клиент" Width="50" DisplayMemberBinding="{Binding PersonId}"/>
+                        <GridViewColumn Header="Почта" Width="150" DisplayMemberBinding="{Binding Email}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </StackPanel>
 </Window>

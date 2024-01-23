@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:Zelinsky_labs.View"
         mc:Ignorable="d"
         Title="Cтатус" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <ListView x:Name="lvPerson">
+        <ListView.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn Header="Номер" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Статус" Width="100" DisplayMemberBinding="{Binding Status}"/>
+                </GridView.Columns>
+            </GridView>
+        </ListView.View>
+    </ListView>
 </Window>

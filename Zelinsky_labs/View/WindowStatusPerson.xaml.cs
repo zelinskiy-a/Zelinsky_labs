@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Zelinsky_labs.ViewModel;
 
 namespace Zelinsky_labs.View
 {
@@ -22,6 +23,9 @@ namespace Zelinsky_labs.View
         public WindowStatusPerson()
         {
             InitializeComponent();
+
+            StatusPersonViewModel vmStatusPerson = new StatusPersonViewModel();
+            lvPerson.ItemsSource = vmStatusPerson.ListStatusPerson;
         }
     }
 }

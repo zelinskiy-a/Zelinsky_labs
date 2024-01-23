@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:Zelinsky_labs.View"
         mc:Ignorable="d"
         Title="Телефон" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <ListView x:Name="lvPerson">
+        <ListView.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn Header="Номер" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Клиент" Width="50" DisplayMemberBinding="{Binding PersonId}"/>
+                    <GridViewColumn Header="Телефон" Width="150" DisplayMemberBinding="{Binding Phone}"/>
+                </GridView.Columns>
+            </GridView>
+        </ListView.View>
+    </ListView>
 </Window>
