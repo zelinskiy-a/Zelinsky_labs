@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Zelinsky_labs.View"
         mc:Ignorable="d"
         Title="Клиент" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <ListView x:Name="lvPerson">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Номер" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Вид Клиента" DisplayMemberBinding="{Binding VerietyID}"/>
+                        <GridViewColumn Header="Статус" Width="50" DisplayMemberBinding="{Binding StatusID}"/>
+                        <GridViewColumn Header="ИНН" Width="100" DisplayMemberBinding="{Binding Inn}"/>
+                        <GridViewColumn Header="Тип клиента" Width="100" DisplayMemberBinding="{Binding Type}"/>
+                        <GridViewColumn Header="Шифр клиента"  Width="100" DisplayMemberBinding="{Binding Shifer}"/>
+                        <GridViewColumn Header="Дата регистрации"  Width="100" DisplayMemberBinding="{Binding Data}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </StackPanel>
+
 </Window>
